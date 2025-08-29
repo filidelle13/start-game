@@ -63,4 +63,3 @@ document.getElementById("searchInput").addEventListener("input", (e) => {
 });
 
 renderCategories();
-

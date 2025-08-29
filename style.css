@@ -1,0 +1,36 @@
+/* style.css */
+
+/* Transizione per il menu slide-in */
+#mobileMenu {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Scrollbar minimal (solo per desktop) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* gray-700 */
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #1f2937; /* gray-800 */
+}
+
+/* Hover animazioni leggere */
+a:hover,
+li:hover {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Effetto clic su card categorie */
+.card:active {
+  transform: scale(0.98);
+}
+
+/* Responsive fixes (facoltativo) */
+@media (max-width: 640px) {
+  .text-lg {
+    font-size: 1rem;
+  }
+}

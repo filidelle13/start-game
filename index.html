@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gaming News</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/tuo_codice_fontawesome.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- MENU MOBILE -->
+  <div id="mobileMenu" class="fixed top-0 left-0 w-64 h-full bg-gray-800 z-50 transform -translate-x-full transition-transform duration-300">
+    <button onclick="toggleMenu()" class="absolute top-4 right-4 text-white text-2xl"><i class="fas fa-times"></i></button>
+    <nav class="mt-16 space-y-4 px-6">
+      <a href="#" class="block text-lg"><i class="fas fa-search mr-2"></i>Cerca</a>
+      <a href="#" class="block text-lg"><i class="fas fa-fire mr-2"></i>Nuove News</a>
+      <a href="https://wa.me/1234567890" target="_blank" class="block text-lg"><i class="fab fa-whatsapp mr-2"></i>Canale WhatsApp</a>
+    </nav>
+  </div>
+
+  <!-- HEADER -->
+  <header class="flex items-center justify-between px-6 py-4 bg-gray-800 shadow-md">
+    <button onclick="toggleMenu()" class="text-white text-2xl"><i class="fas fa-bars"></i></button>
+    <h1 class="text-xl font-bold">Gaming News</h1>
+    <div></div>
+  </header>
+
+  <!-- SEARCH -->
+  <section class="px-6 mt-4">
+    <input id="searchInput" type="text" placeholder="Cerca categoria..." class="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400">
+  </section>
+
+  <!-- CATEGORIE -->
+  <section class="px-6 mt-6">
+    <h2 class="text-lg font-semibold mb-4">Categorie</h2>
+    <div id="categoryContainer" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <!-- Aggiunti dinamicamente -->
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
